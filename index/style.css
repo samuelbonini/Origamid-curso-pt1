@@ -1,0 +1,13 @@
+h1, a {
+  color: rgb(39, 177, 34);
+  text-decoration: none;
+}
+
+#frase1 {
+  color: rgb(165, 146, 146);
+}
+
+.teste {
+  color: yellow;
+  background-color: brown;
+}
