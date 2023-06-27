@@ -1,0 +1,39 @@
+h1 {
+  background-color: antiquewhite;
+
+}
+
+h2 {
+  color: rgb(121, 71, 6);
+  background-position-y: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+
+.hoje {
+  color: darkblue;
+}
+
+.noite1 {
+  color: red;
+}
+
+#noite2_id {
+color: yellow;
+}
+
+
+body {
+  background-color: antiquewhite;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 > a {
+  color: red;
+}
+
+p > a {
+  color: red;
+}
