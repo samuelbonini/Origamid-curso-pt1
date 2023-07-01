@@ -1,0 +1,12 @@
+body {
+  background-attachment: fixed;
+}
+
+img {
+  padding: 50px;
+  height: 400px;
+  width:  450px;
+display: inline-block;
+max-width: 100%;
+background-attachment: fixed;
+}
