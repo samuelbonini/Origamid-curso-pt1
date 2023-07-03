@@ -76,6 +76,39 @@ gap: 20px;
   right: -30px;
 }
 
+.subtitulo {
+  font-size: 64px;
+  text-transform: uppercase;
+  color: rgba(88, 88, 88, 0.664);
+  text-align: right;
+  padding: 40px;
+  align-self: center;
+}
+
+.vantagens {
+background: #fff;
+padding: 40px;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.vantagens-item p {
+  grid-column: 2;
+}
+
+.rodape {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  padding: 40px;
+  box-sizing: border-box;
+}
 
 
 
