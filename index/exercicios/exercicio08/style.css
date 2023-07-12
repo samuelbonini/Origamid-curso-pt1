@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  background: #f3c7c7;
+  background: #ffffff;
   display: grid;
   gap: 60px;
   justify-items: center;
@@ -45,13 +45,17 @@ ul {
 }
 
 .menu a {
+  display: block;
   background-color: white;
   padding: 1rem 2rem;
   border-radius: 4px;
   color: black;
   text-transform: uppercase;
-  display: block;
-  
+  border: 2px solid transparent;
+}
+
+.menu a:hover {
+  border: 2px solid rgb(189, 139, 2);
 }
 
 .conteudo {
@@ -61,7 +65,7 @@ ul {
 }
 
 .introducao {
-  background: #fff;
+  background: #d1cfcd;
   padding: 40px;
   text-align: right;
   position: relative;
@@ -72,32 +76,55 @@ ul {
 }
 
 .botao {
-  background: #e21;
+  background: rgb(189, 139, 2);
   color: white;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
 }
 
+.botao:hover {
+  background: rgb(206, 152, 4);
+ 
+}
+
+
 .introducao h1 {
   font-size: 2rem;
 }
-.detalhe {
+
+.introducao::before {
+  animation: piscar 1s infinite;
+  content: "";
   width: 60px;
   height: 4px;
-  background: red;
+  background: rgb(194, 142, 0);
   position: absolute;
   top: 30px;
   right: -30px;
 }
 
+@keyframes piscar {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+
 .subtitulo {
-  font-size: 64px;
+  font-size: 4rem;
   text-transform: uppercase;
   color: rgba(88, 88, 88, 0.664);
   text-align: right;
   padding: 40px;
   align-self: center;
+  background-image: url(img/onda.svg);
+  
 }
 
 .vantagens {
@@ -110,14 +137,20 @@ padding: 40px;
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 20px;
+  border-left: 3px solid transparent;
 }
-
+.vantagens-item:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+.vantagens-item:hover {
+  border-color: rgb(189, 139, 2);
+}
 .vantagens-item p {
   grid-column: 2;
 }
 
 .rodape {
-  background: #fff;
+  background: #d1cfcd;
   width: 100%;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
