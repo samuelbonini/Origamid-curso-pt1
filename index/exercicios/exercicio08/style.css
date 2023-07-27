@@ -23,7 +23,10 @@ a {
   text-decoration: none;
 }
 
-p, h1, h2, h3 {
+p,
+h1,
+h2,
+h3 {
   margin: 0px;
 }
 
@@ -33,9 +36,9 @@ p {
 }
 
 .menu {
-display: flex;
-flex-wrap: wrap;
-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 ul {
@@ -85,9 +88,7 @@ ul {
 
 .botao:hover {
   background: rgb(206, 152, 4);
- 
 }
-
 
 .introducao h1 {
   font-size: 2rem;
@@ -113,7 +114,7 @@ ul {
   }
   100% {
     opacity: 1;
-  } 
+  }
 }
 
 .subtitulo {
@@ -124,12 +125,11 @@ ul {
   padding: 40px;
   align-self: center;
   background-image: url(img/onda.svg);
-  
 }
 
 .vantagens {
-background: #fff;
-padding: 40px;
+  background: #fff;
+  padding: 40px;
 }
 
 .vantagens-item {
@@ -149,17 +149,11 @@ padding: 40px;
   grid-column: 2;
 }
 
- 
-
 .rodape {
   background: #d1cfcd;
   width: 100%;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
   box-sizing: border-box;
 }
-
-
-
-
