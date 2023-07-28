@@ -1,11 +1,35 @@
+:root {
+  --cor-primaria: #bd8b02;
+  --cor-primaria-escura: #ce9804;
+  --fundo-1: #f7f7f7;
+  --fundo-2: #ffffff;
+  --texto: #000000;
+  --textoconteudo: #000000;
+  --subtitulo: #585858a9;
+  --onda: url("./img/onda-clara.svg");
+  --rodape: #ce9804;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo-1: #111111;
+    --fundo-2: #000000;
+    --texto: #ffffff;
+    --subtitulo: rgba(255, 255, 255, 0.2);
+    --onda: url("./img/onda-escura.svg");
+    --rodape: rgba(255, 255, 255, 0.2);
+  }
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  background: #ffffff;
+  background-color: var(--fundo-1);
   display: grid;
   gap: 60px;
   justify-items: center;
   margin-top: 60px;
+  color: var(--texto);
 }
 
 header {
@@ -49,16 +73,16 @@ ul {
 
 .menu a {
   display: block;
-  background-color: white;
+  background-color: var(--fundo-2);
   padding: 1rem 2rem;
   border-radius: 4px;
-  color: black;
+  color: var(--texto);
   text-transform: uppercase;
   border: 2px solid transparent;
 }
 
 .menu a:hover {
-  border: 2px solid rgb(189, 139, 2);
+  border: 2px solid var(--cor-primaria);
 }
 
 .conteudo {
@@ -68,7 +92,7 @@ ul {
 }
 
 .introducao {
-  background: #d1cfcd;
+  background: var(--fundo-2);
   padding: 40px;
   text-align: right;
   position: relative;
@@ -76,18 +100,20 @@ ul {
   gap: 20px;
   align-content: center;
   justify-items: end;
+  color: var(--texto);
 }
 
 .botao {
-  background: rgb(189, 139, 2);
-  color: white;
+  background: var(--cor-primaria);
+  color: #fffff;
   padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
+  color: var(--textoconteudo);
 }
 
 .botao:hover {
-  background: rgb(206, 152, 4);
+  background: var(--cor-primaria-escura);
 }
 
 .introducao h1 {
@@ -99,7 +125,7 @@ ul {
   content: "";
   width: 60px;
   height: 4px;
-  background: rgb(194, 142, 0);
+  background: #c28e00;
   position: absolute;
   top: 30px;
   right: -30px;
@@ -120,15 +146,15 @@ ul {
 .subtitulo {
   font-size: 4rem;
   text-transform: uppercase;
-  color: rgba(88, 88, 88, 0.664);
+  color: var(--subtitulo);
   text-align: right;
   padding: 40px;
   align-self: center;
-  background-image: url(img/onda.svg);
+  background-image: var(--onda);
 }
 
 .vantagens {
-  background: #fff;
+  background: var(--fundo-2);
   padding: 40px;
 }
 
@@ -140,20 +166,21 @@ ul {
   border-left: 3px solid transparent;
 }
 .vantagens-item:nth-child(odd) {
-  background-color: #f7f7f7;
+  background-color: var(--fundo-1);
 }
 .vantagens-item:hover {
-  border-color: rgb(189, 139, 2);
+  border-color: var(--cor-primaria);
 }
 .vantagens-item p {
   grid-column: 2;
 }
 
 .rodape {
-  background: #d1cfcd;
+  background: var(--rodape);
   width: 100%;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
   box-sizing: border-box;
+  color: var(--texto);
 }
