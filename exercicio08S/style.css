@@ -9,7 +9,6 @@
   --onda: url("./img/onda-clara.svg");
   --rodape: #ce9804;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --fundo-1: #111111;
@@ -184,3 +183,5 @@ ul {
   box-sizing: border-box;
   color: var(--texto);
 }
+
+
