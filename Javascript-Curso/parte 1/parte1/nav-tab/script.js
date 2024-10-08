@@ -24,3 +24,6 @@ if (tabMenu.length && tabContent.length) {
 }
 
 initTabNav()
+
+
+const accordionList = document.querySelectorAll('.js-accordion dt')
