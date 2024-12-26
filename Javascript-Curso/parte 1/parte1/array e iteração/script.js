@@ -6,3 +6,4 @@ carros.forEach((item, index, array ) => {
 })
 
 console.log(carros);
+  
