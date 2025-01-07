@@ -51,11 +51,13 @@
 // console.log(maiorNumero);
 
 
-const frutas = ['banana', 'pera', 'uva'];
+// const frutas = ['banana', 'pera', 'uva'];
 
-const temUva = frutas.some((item) => {
-  console.log(item);
-  return item === 'uva';
-})
+// const temUva = frutas.some((item) => {
+//   console.log(item);
+//   return item === 'uva';
+// })
 
-console.log(temUva);
+// console.log(temUva);
+
+// --- EXERCICIOS ----
