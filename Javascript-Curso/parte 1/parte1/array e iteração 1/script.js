@@ -86,7 +86,7 @@ console.log(objetoCurso)
 // Retorne uma lista com os
 // números maiores que 100
 const numeros = [3, 44, 333, 23, 122, 322, 33];
-
+const maioresQue100 = numeros.filter(n => n > 100);
 
 // Verifique se Baixo faz parte
 // da lista de instrumentos e retorne true
@@ -116,3 +116,9 @@ const compras = [
     preco: 'R$ 10,60'
   }
 ]
+
+const valorTotal = compras.reduce((acumulador, item) => {
+  const  precoLimpo = item.preco.replace('R$', '')
+  console.log(precoLimpo)
+
+}, 0)
